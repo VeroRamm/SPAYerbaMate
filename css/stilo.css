@@ -1,0 +1,146 @@
+*{
+    background-color: rgba(90, 196, 80, 0.3);
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(90, 196, 80, 0.3);
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px 0 10px;
+    flex-wrap: wrap;
+}
+a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+a:hover{
+    background-color: #f2f2f2;
+    color: #369c3e;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    color: #3d3b3b;
+    margin: 30px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    
+}  
+/* estilo del home*/
+.conten2-article2-img,
+.conten-img,
+.conten2-article3-img{
+    width: 300px;
+}
+.article1,
+.article2,
+.article3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    gap: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+}
+/* estilo del origen*/
+.conten-img2{
+    width: 200px;
+}
+#origen{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    gap: 20px;
+
+}
+.origen1,
+.origen2{
+    border: rgba(45, 45, 48, .3) solid 2px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    padding: 20px;
+}
+/* estilo del beneficio*/
+.b-conten{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.b-contenido{
+    padding: 30px;
+    margin: 10px;
+}
+.container-active h4{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* estilo del footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    gap: 20px;
+    
+}
+footer h4{
+    margin-top: 20px;
+    text-align: center;
+}
+.sociales a{
+    color: #110f0f;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+    background-color: #369c3e;
+}

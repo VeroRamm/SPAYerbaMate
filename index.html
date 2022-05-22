@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spa Yerba Mate</title>
+    <script src="https://kit.fontawesome.com/893ca4dba1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/stilo.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <a class="menu" @click="view = 'home'">Home</a>
+                <a class="menu" @click="view = 'origen'">Origen</a>
+                <a class="menu" @click="view = 'beneficio'">Beneficios</a>
+                <a class="menu" @click="view = 'curiosidades'">Curiosidades</a>
+                <a class="menu" @click="view = 'contacto'">Contacto</a>
+            </nav>
+
+        </header>
+        <main>
+            <div class="contenedor">
+            <component :is="view">   </component>
+            </div>
+        </main>
+            
+    </div>
+    <footer>
+        <p class="copy">&copy; Spa Yerba Mate</p>
+        <div class="sociales">
+            <a href="https://www.facebook.com/spa.yerbamate/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/spa.yerbamate/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+    </footer>
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script src="./js/main.js"></script> 
+</body>
+</html>
