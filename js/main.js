@@ -1,8 +1,8 @@
+
 const templates={
     home:`
     <div id="home" class="active">
-        <h1 class="titulo">{{titulo}}</h1>
-        <section class="conten"> 
+        <h1 class="titulo">{{titulo}}</h1> 
         <article class="article1">
             <img class="conten-img" src="./img/mate y yerba.jpg" alt="Yerba">
             <p class="Primera-letra">La yerba mate, cuyo nombre científico es Ilex Paraguariensis es un árbol nativo de la Selva
@@ -10,38 +10,35 @@ const templates={
             cosecha, las plantas son podadas hasta dos veces al año a una altura promedio de 2 metros.
             En la Argentina, llamamos mate a la infusión que se prepara con sus hojas, como también al recipiente 
             donde se la toma, siendo el más utilizado el de calabaza.</p>
-        </article>
-        </section>
-        <!--El contenido de esta seccion tiene estilo ccs grid-->
-        <section class="conten2">    
+        </article>           
         <article class="article2">
             <p><span style="text-decoration: underline; padding: 5px; text-align: center; margin-bottom:2px;" >Nuestra infusion nacional</span><br>
             La Ley 26.871 sancionada en 3 de julio de 2013 declaró al mate como infusión nacional, disponiendo la promoción y difusión de sus tradiciones en eventos y actividades culturales, sociales o deportivas de carácter oficial.
             Asimismo, el 30 de noviembre de cada año se celebra el Día Nacional del Mate, en conmemoración del nacimiento de Andrés Guacurarí y Artigas, según lo establecido por la Ley 27.117, impulsada con el fin de promover el reconocimiento permanente de nuestras costumbres.
             </p>
-            <img class="conten2-article2-img" src="./img/noticias2.jpg" alt="Planta de Yerba Mate" >
+            <img class="article2-img" src="./img/noticias2.jpg" alt="Planta de Yerba Mate" >
         </article>      
         <article class="article3">
                 <!--Se creo animacion para esta imagen-->
-                <img class="conten2-article3-img" :src="imagen" alt="Planta de Yerba Mate">
+                <img class="article3-img" :src="imagen" alt="Planta de Yerba Mate">
             <p><span style="text-decoration: underline; padding: 5px; text-align: center; margin-bottom:2px;"> Produccion</span><br>
             La Yerba Mate Argentina se produce y cultiva en Misiones y nordeste de Corrientes.
             Argentina es el principal productor y exportador mundial de Yerba Mate.
             Los suelos rojos, con alto contenido de hierros, y el clima subtropical sin estación seca, son ideales para el cultivo de la Yerba Mate.
             </p>  
         </article>
-        </section>
+       
      </div>`,
     //Se creo una seccion para mostrar los datos de origenes
     origenes: `
     <div id="origen" class="container active">
-            <section class="origen1">
+        <section class="origen1">
             <p>El origen del mate se remonta a los nativos guaraníes, ellos utilizaban las hojas del árbol como bebida, objeto de culto
             y moneda de cambio con otros pueblos.
             Durante las largas travesías por las selvas, los conquistadores notaron que los guaraníes tenían mayor resistencia 
             luego de tomar esta bebida sagrada.</p>
-            <img style="border-radius: 180px; padding:20px;" src="./img/hombre.jpg" alt="Aborigen Guarani">
-            </section>
+            <img class="animate__animated animate__fadeInRightBig" style="border-radius: 180px; padding:20px;" src="./img/hombre.jpg" alt="Aborigen Guarani">
+        </section>
         <section class="origen2">
             <h3 class="origen-h3-titulo">Un regalo de los Dioses</h3>
                 <p>Caá en lengua guaraní significa yerba, pero también significa planta y selva. Para el guaraní, el árbol de la yerba 
@@ -53,7 +50,7 @@ const templates={
         </section>
         <section class="origen1">
             <h3 class="origen-h3-titulo">Los jesuitas y las reducciones</h3>
-            <img style="border-radius: 180px; padding:20px;" src="./img/monge.jpg" alt="Jesuita">
+            <img class="animate__animated animate__fadeInRightBig" style="border-radius: 180px; padding:20px;" src="./img/monge.jpg" alt="Jesuita">
             <p>Más tarde los jesuitas introdujeron el cultivo en las reducciones, contribuyeron con su difusión, la bebida fue conocida 
                 entonces como el “té de los jesuitas”.
                 Fueron los primeros en lograr hacer germinar las semillas de la yerba con un método secreto, que permitió cultivar 
@@ -71,45 +68,44 @@ const templates={
     //Se creo una seccion para mostrar los datos de curiosidades
     curiosidades: `
     <div id="curiosidades" class="container active">
-    <section class="curiosidades">
-        <h2>Curiosidades</h2>
-            <article class="curiosidades-article1">
-                <h3>Consumo</h3>
-                <p>Según datos del Instituto Nacional de la Yerba Mate (INYM), en la Argentina se consume un promedio 6,4 kg por habitante por año y la yerba mate está presente en más del 90% de los hogares.
-                Su consumo es altamente beneficioso para la salud, ya que contiene vitaminas del grupo B, posee un gran poder antioxidante, produce un efecto energizante y ayuda a reducir el colesterol malo (LDL) y los triglicéridos.
-                <br> Un texto de la Cancillería Argentina da cuenta de la 
-                profunda simbología que conlleva compartir la infusión:<!--Esta lista tiene animacion-->
-                    <ul>
-                        <li class="article1-li">Es el compañerismo hecho momento.</li>
-                        <li class="article1-li">Es la modestia de quien ceba el mejor mate.</li> 
-                        <li class="article1-li">Es la generosidad de dar hasta el final.</li>
-                        <li class="article1-li">Es la hospitalidad de la invitación.</li>
-                        <li class="article1-li">Es la justicia de uno por uno.</li>
-                        <li class="article1-li">Es la obligación de decir “gracias”, al menos una vez al día.</li>
-                        <li class="article1-li">Es la actitud ética, franca y leal de encontrarse, sin mayores pretensiones que compartir.</li>
-                    </ul>
-                </p>
-            </article>
-            <article class="curiosidades-article2">
-            <h3>Produccion de Yerba envasada y hoja verde</h3>
-                <p>En el año 2020, la producción de yerba mate molida y envasada para el mercado interno fue de casi 268,8 millones de kilos, lo que implica cosechar alrededor de 812,9 millones de kilos de hoja verde.
-                Para producir 1 kg de yerba mate, se necesitan 3 kg de hojas verdes, porque durante el secado, el producto pierde agua y peso.
-                </p>
-            <h3>¿Cuántos kilos de yerba mate se consumen por habitante?</h3>
-                <p>En base a los datos del último censo, somos 41 millones de argentinos, entonces consumimos en promedio 6,4 kg por habitante por año.
-                Según una investigación de mercados realizada en toda Argentina (1), la yerba mate está presente en más del 90% de los hogares argentinos.
-                </p>
-        </article>
+        <section class="curiosidades">
+            <h2 class= "CurioTitulo">Curiosidades</h2>
+                <article class="curiosidades-article1">
+                    <h3 class="CurioTitulo">Consumo</h3>
+                    <p>Según datos del Instituto Nacional de la Yerba Mate (INYM), en la Argentina se consume un promedio 6,4 kg por habitante por año y la yerba mate está presente en más del 90% de los hogares.
+                    Su consumo es altamente beneficioso para la salud, ya que contiene vitaminas del grupo B, posee un gran poder antioxidante, produce un efecto energizante y ayuda a reducir el colesterol malo (LDL) y los triglicéridos.
+                    <br> Un texto de la Cancillería Argentina da cuenta de la 
+                    profunda simbología que conlleva compartir la infusión:<!--Esta lista tiene animacion-->
+                        <ul>
+                            <li class = "animate__animated animate__lightSpeedInRight">Es el compañerismo hecho momento.</li>
+                            <li class = "animate__animated animate__lightSpeedInLeft">Es la modestia de quien ceba el mejor mate.</li> 
+                            <li class = "animate__animated animate__lightSpeedInRight">Es la generosidad de dar hasta el final.</li>
+                            <li class = "animate__animated animate__lightSpeedInLeft">Es la hospitalidad de la invitación.</li>
+                            <li class = "animate__animated animate__lightSpeedInRight">Es la justicia de uno por uno.</li>
+                            <li class = "animate__animated animate__lightSpeedInLeft">Es la obligación de decir “gracias”, al menos una vez al día.</li>
+                            <li class = "animate__animated animate__lightSpeedInRight">Es la actitud ética, franca y leal de encontrarse, sin mayores pretensiones que compartir.</li>
+                        </ul>
+                    </p>
+                </article>
+                <article class="curiosidades-article2">
+                    <h3 class="CurioTitulo">Produccion de Yerba envasada y hoja verde</h3>
+                    <p>En el año 2020, la producción de yerba mate molida y envasada para el mercado interno fue de casi 268,8 millones de kilos, lo que implica cosechar alrededor de 812,9 millones de kilos de hoja verde.
+                    Para producir 1 kg de yerba mate, se necesitan 3 kg de hojas verdes, porque durante el secado, el producto pierde agua y peso.
+                    </p>
+                    <h3 class="CurioTitulo">¿Cuántos kilos de yerba mate se consumen por habitante?</h3>
+                        <p>En base a los datos del último censo, somos 41 millones de argentinos, entonces consumimos en promedio 6,4 kg por habitante por año.
+                        Según una investigación de mercados realizada en toda Argentina (1), la yerba mate está presente en más del 90% de los hogares argentinos.
+                        </p>
+                </article>
         </section>
     </div>`,
     //Se creo una seccion para mostrar los datos de beneficios
     beneficios: `  
     <div id="beneficio" class="container-active">
-        <h4>El mate es un potente antioxidante, fuente de vitaminas, minerales
-        y también ayuda a reducir el colesterol malo.</h4>
-    <section class="b-contenido">
-    <h4>Principales Beneficios del mate:</h4>
-    </section>
+        <h4 id= "parrafo" class="animate__animated animate__backInLeft">{{parrafo}}</h4>
+   
+        <h4 class = "titulo">{{titulo}}</h4>
+    
     <article class="b-conten">
     <p><span style="font-weight: bold; color: #110247; text-decoration: underline;">Potente antioxidante.</span>
         El mate cebado caliente (forma de consumo más popular) contiene un 60% de antioxidante más que el té verde.
@@ -138,56 +134,22 @@ const templates={
     </div>`,
    // Se creo una seccion para mostrar los datos de contacto
     contacto: ` 
-    <div id="contacto" class="container active">
-        <form action="" class="contenedorDeDatos" id="form">
-        <!--Ingreso de nombre, input que se valida-->
-        <div class="form-control">
-        <label for="nombre">Nombre</label>
-        <input type="text" placeholder="Nombre" id="nombre" />
-        
-        </div>
+    <div id="contacto" class="active">
+        <h1 class="titulo">{{titulo}}</h1>
+        <form action="" id="formulario" class = "formulario" @submit="checkForm">
             
-    <!-- Ingreso de apellido, input que se valida-->
-        <div class="form-control">
+            <label for="nombre" class= "indicacion" >Nombre</label>
+            <input v-model= "nombre" class= "input" type="text" id="nombre" name="nombre" placeholder="Nombre">
             <label for="apellido">Apellido</label>
-            <input type="text" placeholder="Apellido" id="apellido" />
-            
-        </div>    
-        
-        <!-- Ingreso de email, input que se valida -->
-        <div class="form-control">
-        <label for="email">Email</label>
-        <input type="email" placeholder="email@email.com" id="email" />
-        
-        </div>
-        <!--Formulario de gustos-->
-        <div class="form-control" id="tipo">
-        <p>Que tipo de yerba prefiere?</p>
-        <select name=" sabores" id="sabores">
-            <option value="1"> Yerba con palo</option>
-            <option value="2"> Yerba sin palo</option>
-            <option value="3"> Yerba saborizada</option>
-            <option value="4"> Yerba con compuesta con hierbas aromaticas</option>
-        </select>
-        </div>
-        <!--Formulario de comentarios-->
-        <div class="form-control" id="grupo__texto">
-        <label for="escribir">Puede escribir</label> <br>
-        <textarea name="escribir" cols="40" rows="10" id="texto"></textarea><br>
-        </div>
-    <!--Formulario de recibir info-->
-        <div class="info" id="info">
-        <p>Te gustaria recibir noticias por mail?</p>
-        <input type="radio" name="opcion"value="Si">Si
-        <input type="radio" name="opcion"value="No">No
-        </div>
-    <!--Boton de enviar-->
-        <div >
-        <button type="submit" class="formBoton" id="formBoton" >Enviar</button>
-        </div> 
-        <div id="error"></div>
+            <input v-model= "apellido" class= "input" type="text" id="apellido" name="apellido" placeholder="Apellido">
+            <label for="email">Email</label>
+            <input v-model = "email" class= "input" type="email" id="email" name="email" placeholder="Email">
+            <label for="mensaje">Mensaje</label>
+            <textarea v-model= "mensaje" class= "inputText" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <input class= "boton" type="submit" value="Enviar">
         </form> 
-</div>`,     
+    </div>`
+        
 }
 
 const app = new Vue({   // Vue instance         
@@ -217,6 +179,8 @@ const app = new Vue({   // Vue instance
         beneficio: {
             data: function(){
                 return {
+                    titulo: 'Principales Beneficios del mate:',
+                    parrafo: 'El mate es un potente antioxidante, fuente de vitaminas, minerales y también ayuda a reducir el colesterol malo.',
                     view: 'beneficio',
                 }
             },
@@ -233,15 +197,32 @@ const app = new Vue({   // Vue instance
         contacto: {
             data: function(){
                 return {
-                    view: 'contacto',
+                    titulo: 'Envianos tu comentario',
+                    view: 'contacto', 
+                    nombre: '',
+                    apellido: '',
+                    email: '',
+                    mensaje: '',          
                 }
             },
-            template: templates.contacto,
+            template: templates.contacto,  
+            methods: {
+                checkForm: function(e){
+                    e.preventDefault();
+                    if(this.nombre == '' || this.apellido == '' || this.email == '' || this.mensaje == ''){
+                        alert('Por favor complete todos los campos');
+                    }else{
+                        alert('Mensaje enviado');
+                    }
+
+                }
         },
-    },
+    }, 
     methods: {
         changeView(view){
             this.view = view
-        }
-    }
+        }, 
+    },
+    },
+  
 })
